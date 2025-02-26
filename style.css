@@ -1,0 +1,8 @@
+div {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+}
+.animate__animated.animate__flipInY{
+    --animate-duration: 2s;
+  }
