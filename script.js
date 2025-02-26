@@ -1,18 +1,24 @@
 const animin = document.querySelector("#um")
 const animout = document.querySelector("#dois")
-let div = document.querySelector("div")
+let divUm = document.querySelector("#divUm")
+let divDois = document.querySelector("#divDois")
 
 animin.addEventListener("click", animationin)
 animout.addEventListener("click", animationout)
 
 
 function animationin(){
-    div.classList.remove('animate__flipOutY')
-    div.classList.add('animate__flipInY')
-    div.style.setProperty('--animate-duration', '2s');
-}
-function animationout(){
-    div.classList.remove('animate__flipInY')
-    div.classList.add('animate__flipOutY')
-    div.style.setProperty('--animate-duration', '2s');
+//     div.classList.remove('animate__flipOutY')
+//     div.classList.add('animate__flipOutY')
+divUm.classList.add('esconder')
+divDois.classList.remove('esconder')
+ }
+function animationout() {
+    // setTimeout(function(){
+    //     divUm.classList.add('esconder')
+    // }, 1100)
+    divDois.classList.add('esconder')
+    divUm.classList.remove('esconder')
+
+
 }
